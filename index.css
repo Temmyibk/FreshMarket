@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Roboto Condensed", sans-serif;
+}
+.freshMarket-header{
+    display: flex;
+    color: rgb(13, 105, 75);
+    padding: 20px;
+     font-weight: bolder;
+     justify-content: space-around;
+     box-shadow: gainsboro 5px 2px 3px;
+     align-items: center;
+}
+
+.freshMarket-logo{
+    gap: 9px;
+    display: flex;
+    
+   
+}
+.freshMarket-logo i{
+    font-size: 30px;
+}
+.freshMarket-Nav ul{
+    display: flex;
+    text-decoration: none; 
+    list-style-type:none;
+    gap: 20px;
+    transform: rotate(10px);
+}
+.freshMarket-btn a{
+    padding: 13px 25px;
+    background-color:rgb(13, 105, 75) ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+.freshMarket-btn a:hover{
+    transform: scale(1.1);
+}
+.freshMarket-Nav li a{
+    text-decoration: none;
+     color: rgb(13, 105, 75);
+     display: inline-block;
+     transition: all 0.3s ease;
+}
+.freshMarket-Nav li a:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(13, 105, 75) 2px 3px 3px;
+
+}
+.hero-Image img{
+    object-fit: cover;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.heroSection{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 50px;
+   
+}
+.hero-heading{
+    background-color: rgb(209, 250, 229);
+    width: 300px;
+    color: rgb(8, 102, 71);
+    padding: 7px;
+  
+}
+.hero-textone{
+    color: rgb(8, 102, 71);
+    margin-top: 20px;
+    font-size: 40px;
+}
+.hero-textwo{
+    color: rgb(75, 85, 99);
+    margin-top: 20px;
+}
+.hero-listItems{
+    color: rgb(75, 85, 99);
+    margin-top: 20px;
+}
+.hero-buttons{
+    margin-top: 20px;
+     gap: 17px;
+     display: flex;
+   
+}
+.hero-buttons button{
+    padding: 20px;
+    border-radius: 7px;
+    
+}
+.btn1{
+    background-color: rgb(8, 102, 71);
+    color: wheat;
+    border: none;
+}
+.btn1:hover{
+    background-color: rgb(20, 87, 87);
+}
+.btn2{
+    border: solid 2px rgb(8, 102, 71);
+    color: rgb(8, 102, 71);
+}
+.btn2:hover{
+    background-color: rgba(0, 255, 255, 0.53);
+}
+.leftdiv{
+    margin-right: 20px;
+}
