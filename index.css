@@ -4,47 +4,66 @@
     box-sizing: border-box;
     
 }
+html{
+    font-size: 62.5%;
+}
+@media (max-width:1230px){
+    html{
+        font-size: 50%;
+    }
+}
 body{
     font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.6rem;
 }
 .freshMarket-header{
     display: flex;
     color: rgb(13, 105, 75);
-    padding: 20px;
+    padding: 2rem;
      font-weight: bolder;
      justify-content: space-around;
      box-shadow: gainsboro 5px 2px 3px;
      align-items: center;
+     position: sticky;
+     top: 0;
+     background: white;
+     z-index: 1000;
+    
 }
-
 .freshMarket-logo{
     gap: 9px;
     display: flex;
     
    
 }
+@media (max-width:1024px){
+  body {
+    font-size: 20px;
+    background-color: lightblue;
+  }
+}
 .freshMarket-logo i{
-    font-size: 30px;
+    font-size: 3rem;
 }
 .freshMarket-Nav ul{
     display: flex;
     text-decoration: none; 
     list-style-type:none;
-    gap: 20px;
-    transform: rotate(10px);
+    gap: 2rem;
+    /* transform: rotate(10px); */
 }
 .freshMarket-btn a{
-    padding: 13px 25px;
+    padding: 1.3rem 2.5rem;
     background-color:rgb(13, 105, 75) ;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     color: white;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease-in;
 }
 .freshMarket-btn a:hover{
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 .freshMarket-Nav li a{
     text-decoration: none;
@@ -59,44 +78,57 @@ body{
 }
 .hero-Image img{
     object-fit: cover;
-    max-width: 500px;
-    border-radius: 10px;
+    max-width: 50rem;
+    border-radius: 1rem;
+}
+@media(max-width:900px){
+    .hero-Image img{
+        max-width: 40rem;
+    }
+}
+@media(max-width:900px){
+    .hero-Image img{
+        display: none;
+    }
+    .box{
+        font-size: ;
+    }
 }
 .heroSection{
     display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-top: 50px;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 5rem;
    
 }
 .hero-heading{
     background-color: rgb(209, 250, 229);
-    width: 300px;
+    width: 30rem;
     color: rgb(8, 102, 71);
     padding: 7px;
   
 }
 .hero-textone{
     color: rgb(8, 102, 71);
-    margin-top: 20px;
-    font-size: 40px;
+    margin-top: 2rem;
+    font-size: 4rem;
 }
 .hero-textwo{
     color: rgb(75, 85, 99);
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 .hero-listItems{
     color: rgb(75, 85, 99);
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 .hero-buttons{
-    margin-top: 20px;
-     gap: 17px;
+    margin-top: 2rem;
+     gap: 1.7rem;
      display: flex;
    
 }
 .hero-buttons button{
-    padding: 20px;
+    padding: 2rem;
     border-radius: 7px;
     
 }
@@ -113,8 +145,158 @@ body{
     color: rgb(8, 102, 71);
 }
 .btn2:hover{
-    background-color: rgba(0, 255, 255, 0.53);
+    background-color: rgb(209, 250, 229);
 }
 .leftdiv{
-    margin-right: 20px;
+    margin-right: 2rem;
+}
+@media (max-width:900px){
+    .leftdiv{
+        display: block;
+    }
+}
+.howitworks-container{
+    background-color:rgb(209, 250, 229) ;
+     margin-top: 5rem;
+}
+.howitworks-box{
+    display: flex;
+    gap: 3rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 5rem;
+    flex-wrap: nowrap;
+  
+}
+.box{
+    background-color: white;
+    transition: all 0.3s ease-out;
+    height: auto;
+    border-radius: 9px;
+    position: relative;
+    padding-bottom: 5rem;
+  
+}
+.box:hover{
+    transform:scale(1.1);
+    box-shadow: grey 2px 3px 4px;
+}
+.box i{
+    background-color: aqua;
+    padding: 1.5rem;
+    align-items: center;
+    border-radius: 7px;
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    font-size: 2rem;
+    color: rgb(8, 102, 71);
+}
+.howitworks-heading{
+    text-align: center;
+    padding: 5rem;
+}
+.howitworks-heading p{
+    color: rgba(0, 0, 0, 0.622);
+    padding-top: 2rem;
+}
+.howitworks-heading h1{
+    color: rgb(8, 102, 71); 
+}
+.box h3{
+    color: rgb(8, 102, 71) ;
+    padding-bottom: 1.3rem;
+   
+}
+.box p{
+    color: rgba(0, 0, 0, 0.784);
+    
+}
+.box-description{
+    padding-top: 11rem;
+    margin-left: 2rem;
+    margin-left: 1.5rem;
+    
+}
+.shop-container{
+    
+}
+.shop-box{
+    display: flex;
+    gap: 2.5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 5rem;
+   
+}
+.boxx{
+    background-color: rgb(209, 250, 229);
+     border-radius: 1rem;
+     transition: all 0.3s ease;
+     margin-top: 2.5rem;
+     padding-bottom: 2rem;
+}
+.boxx:hover{
+    transform: scale(1.1);
+    box-shadow: grey 2px 3px 4px;
+}
+.shop-heading{
+    text-align: center;
+     margin-top: 5rem;
+}
+.shop-heading h1{
+    color: rgb(8, 102, 71)  ;
+}
+.shop-heading p{
+    color: rgba(0, 0, 0, 0.612);
+    padding-top: 1.5rem;
+}
+.boxx-description{
+    padding: 2rem;
+}
+
+.boxx-description p{
+    color: rgb(75, 85, 99) ;
+    padding-top: 1.3rem;
+}
+.boxx-description h3{
+    color: rgb(8, 102, 71) ;
+}
+.list{
+    padding: 1rem;
+}
+.semi-footer{
+    background-color:  rgb(8, 102, 71);
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+.btn a{
+    text-decoration: none;
+    color:  rgb(8, 102, 71);
+}
+.btn{
+    background-color: white;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    
+}
+.main-footer{
+    text-align: center;
+    background-color: rgb(209, 250, 229);
+    color: rgb(75, 85, 99);
+    padding: 2rem;
+}
+.list i{
+    color:rgb(8, 102, 71) ;
+    padding-right: 5px;
+}
+.list p{
+    color: rgb(75, 85, 99);
+}
+.semi-footer p{
+    padding: 2rem;
 }
