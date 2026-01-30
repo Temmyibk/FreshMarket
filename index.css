@@ -30,6 +30,11 @@ body{
      z-index: 1000;
     
 }
+@media(max-width:900px){
+    .freshMarket-header{
+        padding: 1rem;
+    }
+}
 .freshMarket-logo{
     gap: 9px;
     display: flex;
@@ -51,6 +56,11 @@ body{
     list-style-type:none;
     gap: 2rem;
     /* transform: rotate(10px); */
+}
+@media(max-width:900px){
+    .freshMarket-Nav ul{
+        display: none;
+    }
 }
 .freshMarket-btn a{
     padding: 1.3rem 2.5rem;
@@ -226,6 +236,12 @@ body{
     padding-right: 15rem;
     padding-bottom: 5rem;
    
+}
+@media(max-width:900px){
+     /* .shop-box {
+    flex-direction: column;
+  } */
+
 }
 .boxx{
     background-color: rgb(209, 250, 229);
