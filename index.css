@@ -38,7 +38,7 @@ body{
 }
 @media (max-width:1024px){
   body {
-    font-size: 20px;
+    font-size: 2rem;
     background-color: lightblue;
   }
 }
@@ -81,7 +81,7 @@ body{
     max-width: 50rem;
     border-radius: 1rem;
 }
-@media(max-width:900px){
+@media(max-width:1000px){
     .hero-Image img{
         max-width: 40rem;
     }
@@ -90,9 +90,7 @@ body{
     .hero-Image img{
         display: none;
     }
-    .box{
-        font-size: ;
-    }
+   
 }
 .heroSection{
     display: flex;
@@ -299,4 +297,57 @@ body{
 }
 .semi-footer p{
     padding: 2rem;
+}
+@media (max-width: 900px) {
+
+  /* Reduce side spacing */
+  .heroSection,
+  .howitworks-box,
+  .shop-box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Stack hero section vertically */
+  .heroSection {
+    flex-direction: column;
+  }
+
+  /* Hide hero image on small screens */
+  .hero-Image img {
+    display: none;
+  }
+
+  /* Stack "How it works" boxes */
+  .howitworks-box {
+    flex-direction: column;
+  }
+
+  /* Stack shop product boxes */
+  .shop-box {
+    flex-direction: column;
+  }
+
+  /* Make buttons full width */
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+
+  /* Navigation menu stack (optional for later hamburger menu) */
+  .freshMarket-Nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .heroSection,
+  .howitworks-box,
+  .shop-box {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
